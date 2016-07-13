@@ -1,4 +1,4 @@
-# Ionic 1.x AngularJS Clearable Directive
+# Ionic 1.x AngularJS Clearable Input Field Directive
 
 An [Ionic](http://ionicframework.com/docs/components/#forms) [AngularJS](http://angularjs.org/) directive for adding a clear button inside an input element.
 
@@ -16,6 +16,10 @@ Using the `ionic-input-clearable` directive is pretty simple:
 ```
 <input type="text" ng-model="test" ionic-input-clearable />
 ```
+
+## Demo(style is not show correctly)
+
+http://codepen.io/sw2sonic/pen/kXxpvO?editors=1010#0
 
 ## Limitations
 
