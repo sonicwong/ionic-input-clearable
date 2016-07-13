@@ -1,4 +1,4 @@
-# Inoic 1.x AngularJS Clearable Directive
+# Ionic 1.x AngularJS Clearable Directive
 
 An [Ionic](http://ionicframework.com/docs/components/#forms) [AngularJS](http://angularjs.org/) directive for adding a clear button inside an input element.
 
