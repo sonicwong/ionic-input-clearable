@@ -1,0 +1,30 @@
+/* ================================================
+Input field
+================================================ */
+.card .item.item-input input.ionic-input-clearable-field,
+.list-inset .item.item-input input.ionic-input-clearable-field,
+.padding > .list .item.item-input input.ionic-input-clearable-field,
+.padding-horizontal > .list .item.item-input input.ionic-input-clearable-field{
+    padding-right: 32px;
+}
+
+
+/* ================================================
+Clear button
+================================================ */
+.ionic-input-clearable-btn.button{
+    position: absolute;
+    bottom: 11px;
+    right: 0;
+    min-height: inherit;
+    padding-right: 10px;
+}
+
+.ionic-input-clearable-btn.button,
+.ionic-input-clearable-btn.button .icon:before,
+.ionic-input-clearable-btn.button.icon:before,
+.ionic-input-clearable-btn.button.icon-left:before,
+.ionic-input-clearable-btn.button.icon-right:before{
+    font-size: 14px;
+    line-height: 16px;
+}

@@ -1,0 +1,57 @@
+        <div class="list">
+            <div class="item item-divider">Placeholder</div>
+            <label class="item item-input">
+                <input type="text" placeholder="normal" />
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="clearable" ng-model="searchkey" ionic-input-clearable />
+            </label>
+            
+            <div class="item item-divider">Inline label</div>
+            <label class="item item-input">
+                <span class="input-label">normal</span>
+                <input type="password">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">clearable</span>
+                <input type="text" placeholder="clearable" ng-model="searchkey" ionic-input-clearable />
+            </label>
+            
+            <div class="item item-divider">Stacked labels</div>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">normal</span>
+                <input type="text" placeholder="normal">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">clearable</span>
+                <input type="text" placeholder="clearable" ng-model="searchkey" ionic-input-clearable />
+            </label>
+            
+            <div class="item item-divider">Floating labels (Bug, label not clear on click)</div>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">normal</span>
+                <input type="text" placeholder="normal">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">normal</span>
+                <input type="text" placeholder="clearable"  ng-model="searchkey" ionic-input-clearable />
+            </label>
+            
+            <div class="item item-divider">Inset Input (Not support yet)</div>
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="normal">
+                </label>
+                <button class="button button-small">
+                    Submit
+                </button>
+            </div>
+            <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                    <input type="text" placeholder="clearable" ng-model="searchkey" ionic-input-clearable>
+                </label>
+                <button class="button button-small">
+                    Submit
+                </button>
+            </div>
+        </div>
