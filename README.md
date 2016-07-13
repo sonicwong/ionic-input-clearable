@@ -21,6 +21,10 @@ Using the `ionic-input-clearable` directive is pretty simple:
 
 http://codepen.io/sw2sonic/pen/kXxpvO?editors=1010#0
 
+or
+
+http://play.ionic.io/app/d4df41e717bd
+
 ## Limitations
 
 Actually only `input` with `type="text"` are supported.
