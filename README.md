@@ -9,7 +9,7 @@ Code base on https://github.com/flocca/angular-clearable
 Just include `ionic-input-clearable.js`+`ionic-input-clearable.css` after angularjs (jQuery is not required).
 
 Then you will need to make sure you require `ionicInputClearable` in your app module. That's it!
-eg: www/js/app.js - angular.module('app', ['ionic', ionicInputClearable'])
+eg: www/js/app.js - angular.module('app', ['ionic', 'ionicInputClearable'])
 
 Using the `ionic-input-clearable` directive is pretty simple:
 
