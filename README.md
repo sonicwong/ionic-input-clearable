@@ -54,6 +54,8 @@ To use the `ionic-input-clearable` directive you need set add `ionic-input-clear
 <input ng-model="searchkey" type="text" ionic-input-clearable />
 ```
 
+In order to let the clear button is clickable, please use "div" instead of "label" to wrap your input field.
+
 # License
 
 This Ionic clearable directive is available under the MIT license.
