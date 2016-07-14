@@ -1,7 +1,7 @@
 ionic-input-clearable
 =====================
 
-> A Ionic(1.x) directive for a clearable input field.
+> A Ionic directive for a clearable input field.
 
 #Table of contents
 
