@@ -11,18 +11,17 @@ ionic-input-clearable
 - [Installation](#installation)
 - [Ionic compatibility](#ionic-compatibility)
 - [Usage](#usage)
-- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 # Demo
 
-You can find a live demo on [Codepen](http://codepen.io/) or see it in action in the following image:
+See it in action in the following image:
 
 ![demo](https://github.com/sonicwong/ionic-input-clearable/raw/master/demo.gif)
 
 # Introduction
 
-For one of my private projects I needed a clearable input field component in Ionic(just same as jquery mobile one). I searched a lot and found some plain Angular clearable input field, but these had too much other dependencies and mostly didn't look that good within Ionic. Then . So I spent some time to create my first ionic directive.
+For one of my private projects I needed a clearable input field component in Ionic (just same as jquery mobile one). I searched a lot and found some plain Angular clearable input field, but these had too much other dependencies and mostly didn't look that good within Ionic. Then . So I spent some time to create my first ionic directive.
 
 # Features
 
