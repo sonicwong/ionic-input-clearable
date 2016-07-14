@@ -1,57 +1,62 @@
+<ion-view view-title="Ionic Input Field">
+    <ion-content>
+        <p><a class="button button-full button-positive icon-left ion-home" target="_blank" href="http://ionicframework.com/docs/components/#forms-placeholder-labels">Official docs</a></p>
         <div class="list">
-            <div class="item item-divider">Placeholder</div>
-            <label class="item item-input">
+            <div class="item item-divider">Placeholder labels</div>
+            <div class="item item-input">
                 <input type="text" placeholder="normal" />
-            </label>
-            <label class="item item-input">
+            </div>
+            <div class="item item-input">
                 <input type="text" placeholder="clearable" ng-model="searchkey" ionic-input-clearable />
-            </label>
+            </div>
             
-            <div class="item item-divider">Inline label</div>
-            <label class="item item-input">
+            <div class="item item-divider">Inline labels</div>
+            <div class="item item-input">
                 <span class="input-label">normal</span>
                 <input type="password">
-            </label>
-            <label class="item item-input">
+            </div>
+            <div class="item item-input">
                 <span class="input-label">clearable</span>
                 <input type="text" placeholder="clearable" ng-model="searchkey" ionic-input-clearable />
-            </label>
+            </div>
             
             <div class="item item-divider">Stacked labels</div>
-            <label class="item item-input item-stacked-label">
+            <div class="item item-input item-stacked-label">
                 <span class="input-label">normal</span>
                 <input type="text" placeholder="normal">
-            </label>
-            <label class="item item-input item-stacked-label">
+            </div>
+            <div class="item item-input item-stacked-label">
                 <span class="input-label">clearable</span>
                 <input type="text" placeholder="clearable" ng-model="searchkey" ionic-input-clearable />
-            </label>
+            </div>
             
-            <div class="item item-divider">Floating labels (Bug, label not clear on click)</div>
-            <label class="item item-input item-floating-label">
+            <div class="item item-divider">Floating labels</div>
+            <div class="item item-input item-floating-label">
                 <span class="input-label">normal</span>
                 <input type="text" placeholder="normal">
-            </label>
-            <label class="item item-input item-floating-label">
+            </div>
+            <div class="item item-input item-floating-label">
                 <span class="input-label">normal</span>
                 <input type="text" placeholder="clearable"  ng-model="searchkey" ionic-input-clearable />
-            </label>
+            </div>
             
-            <div class="item item-divider">Inset Input (Not support yet)</div>
+            <div class="item item-divider">Inset forms</div>
             <div class="item item-input-inset">
-                <label class="item-input-wrapper">
+                <div class="item-input-wrapper">
                     <input type="text" placeholder="normal">
-                </label>
+                </div>
                 <button class="button button-small">
                     Submit
                 </button>
             </div>
             <div class="item item-input-inset">
-                <label class="item-input-wrapper">
+                <div class="item-input-wrapper">
                     <input type="text" placeholder="clearable" ng-model="searchkey" ionic-input-clearable>
-                </label>
+                </div>
                 <button class="button button-small">
                     Submit
                 </button>
             </div>
         </div>
+    </ion-content>
+</ion-view>

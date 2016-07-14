@@ -1,48 +1,62 @@
-# Ionic 1.x AngularJS Clearable Input Field Directive
+ionic-input-clearable
+=====================
 
-An [Ionic](http://ionicframework.com/docs/components/#forms) [AngularJS](http://angularjs.org/) directive for adding a clear button inside an input element.
+> A Ionic(1.x) directive for a clearable input field.
 
-Code base on https://github.com/flocca/angular-clearable
+#Table of contents
 
-## How to use ionic-input-clearable
+- [Demo](#demo)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Ionic compatibility](#ionic-compatibility)
+- [Usage](#usage)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
-Just include `ionic-input-clearable.js`+`ionic-input-clearable.css` after angularjs (jQuery is not required).
+# Demo
 
-Then you will need to make sure you require `ionicInputClearable` in your app module. That's it!
-eg: www/js/app.js - angular.module('app', ['ionic', 'ionicInputClearable'])
+You can find a live demo on [Codepen](http://codepen.io/) or see it in action in the following image:
 
-Using the `ionic-input-clearable` directive is pretty simple:
+![demo](https://github.com/sonicwong/ionic-input-clearable/raw/master/demo.gif)
 
+# Introduction
+
+For one of my private projects I needed a clearable input field component in Ionic(just same as jquery mobile one). I searched a lot and found some plain Angular clearable input field, but these had too much other dependencies and mostly didn't look that good within Ionic. Then . So I spent some time to create my first ionic directive.
+
+# Features
+
+The ionic-input-clearable component has the following features:
+- add clear button on the right side of the input field
+
+# Installation
+
+1. Import the `ionic-input-clearable` javascript and css file into your HTML file:
+```html
+<script src="sw2.ionic.input-clearable.js"></script>
+<link href="sw2.ionic.input-clearable.css" rel="stylesheet">
 ```
-<input type="text" ng-model="test" ionic-input-clearable />
+2. Add `sw2.ionic.input-clearable` as a dependency on your Ionic app:
+```javascript
+angular.module('myApp', [
+  'ionic',
+  'sw2.ionic.input-clearable'
+]);
 ```
 
-## Demo(style is not show correctly)
+# Ionic compatibility
 
-http://codepen.io/sw2sonic/pen/kXxpvO?editors=1010#0
+Tested on Ionic version 1.3.1
 
-or
+# Usage
 
-http://play.ionic.io/app/d4df41e717bd
+To use the `ionic-input-clearable` directive you need set add `ionic-input-clearable` attribute to input field:
+```html
+<input ng-model="searchkey" type="text" ionic-input-clearable />
+```
 
-## Limitations
+# License
 
-Actually only `input` with `type="text"` are supported.
+This Ionic clearable directive is available under the MIT license.
 
-## Bugs
-
-1) Text Input: Floating Labels --- (Label will not clear after clear button click)
-
-2) Inset Input (No support yet)
-
-## License.
-
-This code is licensed under The MIT License (MIT).
-
-## Credit
-
-Ionic Directive Author: sw2sonic
-
-Angularjs Directive Author: flocca (https://github.com/flocca/angular-clearable)
-
-Original Author: Giacomo Antolini (aka Flocca)
+(c) sw2sonic
