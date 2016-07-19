@@ -14,6 +14,9 @@ Clear button
     right: 0;
     bottom: 11px;
     min-height: inherit;
+}
+.input-clear-btn.button,
+.item-stacked-label .icon.input-clear-btn{
     padding-right: 10px;
 }
 
