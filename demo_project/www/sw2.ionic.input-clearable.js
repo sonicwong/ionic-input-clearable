@@ -1,3 +1,8 @@
+/* ================================================================================
+https://github.com/sonicwong/ionic-input-clearable
+v1.0.1
+================================================================================ */
+
 angular.module('sw2.ionic.input-clearable', [])
     .directive('ionicInputClearable', function ($compile) {
         return {
@@ -18,8 +23,21 @@ angular.module('sw2.ionic.input-clearable', [])
                     $scope.ngModel = '';
                 }
                 
+                //add bulrhandler
+                $scope.hideClearableOnBlur = ($element[0].hasAttribute("data-hideClearBtnOnBlur"));
+                $element.bind( 'focus', function() {
+                    $scope.$digest();
+                });
+                
+                $element.bind( 'blur', function() {
+                    $scope.$digest();
+                });
+                
                 $scope.isInputFieldEmpty = function () {
-                    return ($scope.ngModel == '' || $scope.ngModel == null);
+                    return (
+                        ($scope.hideClearableOnBlur && document.activeElement !== $element[0])
+                        || $element[0].value == '' || $element[0].value == null
+                    );
                 }
             }
         }

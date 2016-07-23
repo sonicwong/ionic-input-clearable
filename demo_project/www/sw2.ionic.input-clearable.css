@@ -14,7 +14,14 @@ Clear button
     right: 0;
     bottom: 11px;
     min-height: inherit;
+    -webkit-transition: 0.1s linear all;
+    transition: 0.1s linear all;
+    opacity: 1;
 }
+.input-clear-btn.button.ng-hide {
+    opacity: 0;
+}
+
 .input-clear-btn.button,
 .item-stacked-label .icon.input-clear-btn{
     padding-right: 10px;

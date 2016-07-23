@@ -54,10 +54,31 @@ To use the `ionic-input-clearable` directive you need set add `ionic-input-clear
 <input ng-model="searchkey" type="text" ionic-input-clearable />
 ```
 
-In order to let the clear button is clickable, please use "div" instead of "label" to wrap your input field.
+REMARK: In order to let the clear button is clickable, please use "div" instead of "label" to wrap your input field.
+
+# Usage (options)
+
+Add attribute "data-hideClearBtnOnBlur" to INPUT element to hide the clear button when INPUT is blur.
+```html
+<input ng-model="searchkey" type="text" ionic-input-clearable data-hideClearBtnOnBlur />
+```
+
+# Version
+
+v1.0.1 (2016-07-24)
+
+1. Add option for hide clear button on blur (same as ios style). (thanks: mopi1402)
+
+2. Bug fix for determine if element value is element. (thanks: mopi1402)
+
+3. Add CSS fade in/out effect to cancel button.
+
+v1.0.0 (2016-07-19)
+
+1. Initial release
 
 # License
 
 This Ionic clearable directive is available under the MIT license.
 
-(c) sw2sonic
+(c) sw2sonic | sw2hk.com

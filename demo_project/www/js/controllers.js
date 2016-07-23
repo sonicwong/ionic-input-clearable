@@ -42,7 +42,9 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistsCtrl', function($scope) {
-    $scope.searchkey = '12345 67890 12345 67890 12345 67890 12345 67890 12345 67890';
+    $scope.myform = [];
+    $scope.myform.searchkey = '12345 67890 12345 67890 12345 67890 12345 67890 12345 67890';
+    $scope.myform.email = 'test@email.com';
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
