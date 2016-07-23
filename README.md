@@ -30,12 +30,12 @@ The ionic-input-clearable component has the following features:
 
 # Installation
 
-1. Import the `ionic-input-clearable` javascript and css file into your HTML file:
+Import the `ionic-input-clearable` javascript and css file into your HTML file:
 ```html
 <script src="sw2.ionic.input-clearable.js"></script>
 <link href="sw2.ionic.input-clearable.css" rel="stylesheet">
 ```
-2. Add `sw2.ionic.input-clearable` as a dependency on your Ionic app:
+Add `sw2.ionic.input-clearable` as a dependency on your Ionic app:
 ```javascript
 angular.module('myApp', [
   'ionic',
@@ -56,9 +56,9 @@ To use the `ionic-input-clearable` directive you need set add `ionic-input-clear
 
 REMARK: In order to let the clear button is clickable, please use "div" instead of "label" to wrap your input field.
 
-# Usage (options)
+# Options
 
-Add attribute "data-hideClearBtnOnBlur" to INPUT element to hide the clear button when INPUT is blur.
+Add attribute "data-hideClearBtnOnBlur": hide the clear button when INPUT is blur.
 ```html
 <input ng-model="searchkey" type="text" ionic-input-clearable data-hideClearBtnOnBlur />
 ```
