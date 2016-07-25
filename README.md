@@ -1,7 +1,7 @@
 ionic-input-clearable
 =====================
 
-> A Ionic directive for a clearable input field.
+> An Ionic AngularJS directive for adding a clear button to an input element.
 
 #Table of contents
 
@@ -21,7 +21,7 @@ See it in action in the following image:
 
 # Introduction
 
-For one of my private projects I needed a clearable input field component in Ionic (just same as jquery mobile one). I searched a lot and found some plain Angular clearable input field, but these had too much other dependencies and mostly didn't look that good within Ionic. Then . So I spent some time to create my first ionic directive.
+For one of my private projects, I needed a clearable input field component in Ionic (like jquery mobile one). I searched a lot and found some plain Angular clearable input field, but these had too much other dependencies and mostly didn't look that good within Ionic. Then . So I spent some time to create my one.
 
 # Features
 
