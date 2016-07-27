@@ -28,24 +28,27 @@ For one of my private projects, I needed a clearable input field component in Io
 The ionic-input-clearable component has the following features:
 - add clear button on the right side of the input field
 
-# Installation
-
-Import the `ionic-input-clearable` javascript and css file into your HTML file:
-```html
-<script src="sw2.ionic.input-clearable.js"></script>
-<link href="sw2.ionic.input-clearable.css" rel="stylesheet">
-```
-Add `sw2.ionic.input-clearable` as a dependency on your Ionic app:
-```javascript
-angular.module('myApp', [
-  'ionic',
-  'sw2.ionic.input-clearable'
-]);
-```
-
 # Ionic compatibility
 
 Tested on Ionic version 1.3.1
+
+# Installation
+
+1. Import the `ionic-input-clearable` javascript and css file into your HTML file:
+
+  ```html
+  <script src="sw2.ionic.input-clearable.js"></script>
+  <link href="sw2.ionic.input-clearable.css" rel="stylesheet">
+  ```
+
+2. Add `sw2.ionic.input-clearable` as a dependency on your Ionic app:
+
+  ```javascript
+  angular.module('myApp', [
+    'ionic',
+    'sw2.ionic.input-clearable'
+  ]);
+  ```
 
 # Usage
 
