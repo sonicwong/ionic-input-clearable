@@ -4,13 +4,13 @@ v1.0.1
 ================================================================================ */
 
 angular.module('sw2.ionic.input-clearable', [])
-    .directive('ionicInputClearable', function ($compile) {
+    .directive('ionicInputClearable', ['$compile', function ($compile) {
         return {
             restrict: 'A',
             scope: {
                 ngModel: '='
             },
-            controller: function ($scope, $element) {
+            controller: ['$scope', '$element', function ($scope, $element) {
                 //Parent element should be position:relative to make clear button in correct positon
                 $element.parent().css( "position", "relative" );
                 
@@ -21,9 +21,9 @@ angular.module('sw2.ionic.input-clearable', [])
                 
                 $scope.clearInputField = function () {
                     $scope.ngModel = '';
-                }
-                
-                //add bulrhandler
+                };
+
+                //add blurhandler
                 $scope.hideClearableOnBlur = ($element[0].hasAttribute("data-hideClearBtnOnBlur"));
                 $element.bind( 'focus', function() {
                     $scope.$digest();
@@ -32,13 +32,12 @@ angular.module('sw2.ionic.input-clearable', [])
                 $element.bind( 'blur', function() {
                     $scope.$digest();
                 });
-                
+
                 $scope.isInputFieldEmpty = function () {
                     return (
-                        ($scope.hideClearableOnBlur && document.activeElement !== $element[0])
-                        || $element[0].value == '' || $element[0].value == null
+                        ($scope.hideClearableOnBlur && document.activeElement !== $element[0]) || $element[0].value === '' || $element[0].value === null
                     );
-                }
-            }
-        }
-    })
+                };
+            }]
+        };
+    }]);
