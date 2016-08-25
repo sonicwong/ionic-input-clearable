@@ -15,7 +15,7 @@ angular.module('sw2.ionic.input-clearable', [])
                 $element.parent().css( "position", "relative" );
                 
                 //ng-hide class used to fix init flash problem
-                $scope.clearBtn = angular.element('<a tabindex="-1" ng-cloak class="ng-hide input-clear-btn button button-icon icon ion-close" ng-click="clearInputField()" ng-hide="isInputFieldEmpty()"></a>');
+                $scope.clearBtn = angular.element('<button tabindex="-1" ng-cloak class="ng-hide input-clear-btn button button-icon icon ion-close" ng-click="clearInputField()" ng-hide="isInputFieldEmpty()"></button>');
                 $compile($scope.clearBtn)($scope);
                 $element.after($scope.clearBtn);
                 
