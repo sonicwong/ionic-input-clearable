@@ -70,7 +70,7 @@ Add attribute "data-hideClearBtnOnBlur": hide the clear button when INPUT is blu
 
 v1.0.2 (2016-08-26)
 
-1. Minification and IE issue fix (by: monavari-lebrecht)
+1. Minification and IE issue fix (by: monavari-lebrecht) [REMOVED, TO FIX]
 
 2. Add bower.json
 
