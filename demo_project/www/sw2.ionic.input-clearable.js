@@ -4,26 +4,26 @@ v1.0.1
 ================================================================================ */
 
 angular.module('sw2.ionic.input-clearable', [])
-    .directive('ionicInputClearable', function ($compile) {
+    .directive('ionicInputClearable', ['$compile', function ($compile) {
         return {
             restrict: 'A',
             scope: {
                 ngModel: '='
             },
-            controller: function ($scope, $element) {
+            controller: ['$scope', '$element', function ($scope, $element) {
                 //Parent element should be position:relative to make clear button in correct positon
                 $element.parent().css( "position", "relative" );
                 
                 //ng-hide class used to fix init flash problem
-                $scope.clearBtn = angular.element('<a tabindex="-1" ng-cloak class="ng-hide input-clear-btn button button-icon icon ion-close" ng-click="clearInputField()" ng-hide="isInputFieldEmpty()"></a>');
+                $scope.clearBtn = angular.element('<button tabindex="-1" ng-cloak class="ng-hide input-clear-btn button button-icon icon ion-close" ng-click="clearInputField()" ng-hide="isInputFieldEmpty()"></button>');
                 $compile($scope.clearBtn)($scope);
                 $element.after($scope.clearBtn);
                 
                 $scope.clearInputField = function () {
                     $scope.ngModel = '';
-                }
-                
-                //add bulrhandler
+                };
+
+                //add blurhandler
                 $scope.hideClearableOnBlur = ($element[0].hasAttribute("data-hideClearBtnOnBlur"));
                 $element.bind( 'focus', function() {
                     $scope.$digest();
@@ -32,13 +32,12 @@ angular.module('sw2.ionic.input-clearable', [])
                 $element.bind( 'blur', function() {
                     $scope.$digest();
                 });
-                
+
                 $scope.isInputFieldEmpty = function () {
                     return (
-                        ($scope.hideClearableOnBlur && document.activeElement !== $element[0])
-                        || $element[0].value == '' || $element[0].value == null
+                        ($scope.hideClearableOnBlur && document.activeElement !== $element[0]) || $element[0].value === '' || $element[0].value === null
                     );
-                }
-            }
-        }
-    })
+                };
+            }]
+        };
+    }]);
