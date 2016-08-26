@@ -68,11 +68,17 @@ Add attribute "data-hideClearBtnOnBlur": hide the clear button when INPUT is blu
 
 # Version
 
+v1.0.2 (2016-08-26)
+
+1. Minification and IE issue fix (by: monavari-lebrecht)
+
+2. Add bower.json
+
 v1.0.1 (2016-07-24)
 
-1. Add option for hide clear button on blur (same as ios style). (thanks: mopi1402)
+1. Add option for hide clear button on blur (same as ios style). (by: mopi1402)
 
-2. Bug fix for determine if element value is element. (thanks: mopi1402)
+2. Bug fix for determine if element value is element. (by: mopi1402)
 
 3. Add CSS fade in/out effect to cancel button.
 

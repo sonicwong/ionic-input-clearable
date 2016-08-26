@@ -1,0 +1,26 @@
+{
+  "name": "ionic-input-clearable",
+  "version": "1.0.2",
+  "homepage": "https://github.com/sonicwong/ionic-input-clearable",
+  "authors": [
+    "sw2sonic <sw2hk-info@yahoo.com.hk>"
+  ],
+  "description": "An Ionic AngularJS directive for adding a clear button to an input element.",
+  "main": "demo_project/www/sw2.ionic.input-clearable.js",
+  "keywords": [
+    "ionic",
+    "input",
+    "clearable",
+    "clear-button",
+    "ionic-input-clearable",
+    "ion-list",
+    "ion-item"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "demo_project"
+  ],
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0"
+  }
+}
