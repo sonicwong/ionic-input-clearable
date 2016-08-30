@@ -61,12 +61,21 @@ REMARK: In order to let the clear button is clickable, please use "div" instead 
 
 # Options
 
-Add attribute "data-hideClearBtnOnBlur": hide the clear button when INPUT is blur.
+Add attribute:
+
+"data-hideClearBtnOnBlur": hide the clear button when INPUT is blur
+
+"data-input-clear-btn-class": change clear button class (default: ion-close)
+
 ```html
-<input ng-model="searchkey" type="text" ionic-input-clearable data-hideClearBtnOnBlur />
+<input ng-model="searchkey" type="text" ionic-input-clearable data-hideClearBtnOnBlur data-input-clear-btn-class="ion-close-circled" />
 ```
 
 # Version
+
+v1.0.3 (2016-08-30)
+
+1. Add option to control the class for input clear button
 
 v1.0.2 (2016-08-26)
 
