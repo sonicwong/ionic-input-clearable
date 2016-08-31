@@ -95,6 +95,16 @@ v1.0.0 (2016-07-19)
 
 1. Initial release
 
+
+# To do
+
+1) Set focus to input when user click on clear button.
+
+2) Add option to have a call back function after clicked on clear button.
+
+... any other idea is welcome.
+
+
 # License
 
 This Ionic clearable directive is available under the MIT license.
