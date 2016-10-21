@@ -1,3 +1,8 @@
+/* ================================================================================
+https://github.com/sonicwong/ionic-input-clearable
+v1.0.3
+================================================================================ */
+
 angular.module('sw2.ionic.input-clearable', [])
 
     .provider('ionicInputClearableConfig', function() {
@@ -29,9 +34,12 @@ angular.module('sw2.ionic.input-clearable', [])
 
                 //Parent element should be position:relative to make clear button in correct positon
                 $element.parent().css( "position", "relative" );
+                    
+                //Clear button icon class name
+                $scope.inputClearBtnClass = element.hasAttribute("data-input-clear-btn-class") ? element.getAttribute("data-input-clear-btn-class") : 'ion-close';
                 
                 //ng-hide class used to fix init flash problem
-                $scope.clearBtn = angular.element('<a tabindex="-1" ng-cloak class="ng-hide input-clear-btn button button-icon icon ion-close" ng-click="clearInputField( $event )" ng-hide="isInputFieldEmpty()"></a>');
+                $scope.clearBtn = angular.element('<a tabindex="-1" ng-cloak class="ng-hide input-clear-btn button button-icon icon '+$scope.inputClearBtnClass+'" ng-click="clearInputField( $event )" ng-hide="isInputFieldEmpty()"></a>');
                 $compile($scope.clearBtn)($scope);
                 $element.after($scope.clearBtn);
                 
