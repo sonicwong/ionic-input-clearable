@@ -73,6 +73,12 @@ Add attribute:
 
 # Version
 
+v1.0.4 (2016-10-25)
+
+1. Add display type config: always/focused/filled. (by: mopi1402)
+
+2. Fixed input focus bug. (by: mopi1402)
+
 v1.0.3 (2016-08-30)
 
 1. Add option to control the class for input clear button
@@ -98,9 +104,7 @@ v1.0.0 (2016-07-19)
 
 # To do
 
-1) Set focus to input when user click on clear button.
-
-2) Add option to have a call back function after clicked on clear button.
+1) Add option to have a call back function after clicked on clear button.
 
 ... any other idea is welcome.
 
